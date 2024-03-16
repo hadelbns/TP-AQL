@@ -12,7 +12,8 @@ public class Anagram {
         }
 
         int[] count = new int[26];
-        for (int i = 0; i <= s1.length(); i++) {
+        //l'erreur dans les valeurs limites   utilisé < au lieu de <= pour la condition de la boucle.
+        for (int i = 0; i < s1.length(); i++) {
             count[s1.charAt(i) - 'a']++;
             count[s2.charAt(i) - 'a']--;
         }

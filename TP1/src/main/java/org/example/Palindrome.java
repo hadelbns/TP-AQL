@@ -12,8 +12,10 @@ public class Palindrome {
             if (s.charAt(i) != s.charAt(j)) {
                 return false;
             }
-            j++;
-            i--;
+            // Dans cette correction, j'ai échangé
+            // les opérations d'incrémentation et de décrémentation pour i et j
+            i++;
+            j--;
         }
         return true;
     }

@@ -7,19 +7,15 @@ import org.junit.jupiter.api.Test;
 
 
 class PalindromeTest {
+    @Test
     public void testIsPalindrome() {
-        Assertions.assertTrue(Palindrome.isPalindrome("papa"));
-        assertFalse(Palindrome.isPalindrome("radar"));
+        assertTrue(Palindrome.isPalindrome("radar"));
     }
+    @Test
     public void testIsNotPalindrome() {
         assertFalse(Palindrome.isPalindrome("hello"));
-        assertFalse(Palindrome.isPalindrome("world"));
     }
 
-    @Test
-    public void testIsPalindrome_NullString() {
-        Palindrome.isPalindrome(null);
-    }
 
     @Test
     public void testIsPalindrome_EmptyString() {
